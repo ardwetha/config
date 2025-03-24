@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "assistant": {
+    "default_model": {
+      "provider": "lmstudio",
+      "model": "qwen2.5-coder-14b-instruct"
+    },
+    "version": "2"
+  },
   "vim_mode": true,
   "telemetry": {
     "metrics": false,
@@ -18,5 +25,13 @@
     "mode": "system",
     "light": "0x96f Theme",
     "dark": "One Dark"
+  },
+  "lsp": {
+    "tinymist": {
+      "initialization_options": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name"
+      }
+    }
   }
 }
