@@ -47,25 +47,25 @@ background-blur = 80
 
 
 palette = 0=#000000
-palette = 1=#c48782
+palette = 1=#f93c9f
 palette = 2=#8cbd82
 palette = 3=#ded499
-palette = 4=#94bbd4
-palette = 5=#a491c2
-palette = 6=#3d96e2
+palette = 4=#40429e
+palette = 5=#e063e0
+palette = 6=#6c55fd
 palette = 7=#cacaca
 palette = 8=#000000
-palette = 9=#9e6c68
+palette = 9=#890f4e
 palette = 10=#5c7d55
 palette = 11=#7a7552
-palette = 12=#37464f
-palette = 13=#957bbd
-palette = 14=#402e6e
+palette = 12=#332c88
+palette = 13=#8d31a2
+palette = 14=#332c88
 palette = 15=#cacaca
-background = #141414
+background = #1c0d32
 foreground = #b9b9b9
-cursor-color = #70000b
-cursor-text = #002a3a
+cursor-color = #c40792
+cursor-text = #f68efb
 selection-background = #2f3333
 selection-foreground = #e8e8e8
 

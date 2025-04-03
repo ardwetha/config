@@ -23,7 +23,7 @@ font pango:JetBrainsMono Nerd Font 11
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/backgrounds/arthur-hutterer-9gQvO4dPCIM-unsplash-modified.jpg fill
+output * bg ~/backgrounds/newBackground.jpg fill
 #
 # Example configuration:
 #
@@ -144,7 +144,7 @@ input * {
 
     bindsym $mod+Print exec grim -g "$(slurp -d)" - | wl-copy
     bindsym $mod+f exec librewolf
-    bindsym $mod+z exec zeditor
+    bindsym $mod+x exec xournalpp
 
     # Switch the current container between different layout styles
     # bindsym $mod+s layout stacking

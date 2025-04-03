@@ -1,2 +1,12 @@
 [manager]
 show_hidden = true
+
+[opener]
+editpdf = [
+	{ run = 'librewolf "$0"', block = true, for = "unix" },
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.pdf", use = "editpdf" },
+	]

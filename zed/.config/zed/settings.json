@@ -7,10 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "none"
+  },
   "assistant": {
     "default_model": {
       "provider": "lmstudio",
-      "model": "qwen2.5-coder-14b-instruct"
+      "model": "gemma-3-4b-it"
     },
     "version": "2"
   },
@@ -25,6 +28,11 @@
     "mode": "system",
     "light": "0x96f Theme",
     "dark": "One Dark"
+  },
+  "languages": {
+    "Markdown": {
+      "show_inline_completions": false
+    }
   },
   "lsp": {
     "tinymist": {

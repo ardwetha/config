@@ -13,4 +13,4 @@ eval $(thefuck --alias fuck)
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/zacuue/.lmstudio/bin"
 
-export EDITOR="vscodium"
+export EDITOR="zeditor"
