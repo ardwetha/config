@@ -14,3 +14,4 @@ eval $(thefuck --alias fuck)
 export PATH="$PATH:/home/zacuue/.lmstudio/bin"
 
 export EDITOR="zeditor"
+export QT_QPA_PLATFORMTHEME=gtk3
