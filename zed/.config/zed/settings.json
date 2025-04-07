@@ -26,8 +26,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "0x96f Theme",
-    "dark": "One Dark"
+    "light": "my",
+    "dark": "Ayu Dark"
   },
   "languages": {
     "Markdown": {
