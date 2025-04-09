@@ -1,0 +1,313 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+#workspaces button {
+    background: #1c0d32;
+    color: #ffffff;
+    border-radius: 20px;
+
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: #6c55fd;
+    color: black;
+    border-bottom: 3px solid #ffffff;
+
+}
+
+#workspaces button.focused {
+    background: #1c0d32;
+}
+
+#workspaces button.focused:hover {
+    background: #1c0d32;
+    color: black;
+    border-bottom: 3px solid #ffffff;
+
+}
+
+#workspaces button.urgent {
+    background-color: #890f4e;
+}
+
+#mode {
+    background-color: #e063e0;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#custom-media,
+#custom-launcher,
+#custom-power,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 10px;
+    color: black;
+}
+
+
+#window,
+#workspaces {
+    margin: 0px 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0px;
+}
+
+#clock {
+    background-color: #8d31a2;
+    background-image: linear-gradient(-45deg, #332c88 0%, #332c88 52%, #8d31a2 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 4px;
+
+}
+
+#battery {
+    background-color: #8d31a2;
+    color: #000000;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #000000;
+    background-color: #5c7d55;
+    border-radius: 20px 20px 20px 20px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 20px 20px 20px 20px;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#memory {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#disk {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#backlight {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#network {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+}
+
+#network.disconnected {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: #f93c9f;
+}
+
+#pulseaudio {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    min-width: 20px;
+}
+
+#pulseaudio.muted {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    border-radius: 20px 20px 20px 20px;
+    color: #f93c9f;
+}
+
+#custom-media {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+
+}
+
+#custom-media.custom-vlc {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#custom-power{
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    font-size: 16px;
+    border-radius: 19px;
+
+}
+#custom-launcher{
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+#custom-updater {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+}
+
+
+#temperature {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#temperature.critical {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    background-color: #f93c9f;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#tray {
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#idle_inhibitor {
+    border-radius: 20px 0px 0px 20px;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+
+}
+
+#idle_inhibitor.activated {
+    color: black;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+#language {
+    color: black;
+    min-width: 16px;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    border-radius: 20px 20px 20px 20px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    min-width: 16px;
+    background-color: #8d31a2;
+    background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
+    border-radius: 20px 20px 20px 20px;
+}
+
+#keyboard-state > label {
+    padding: 0px 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+}
