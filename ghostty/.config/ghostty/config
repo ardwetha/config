@@ -70,3 +70,7 @@ selection-background = #2f3333
 selection-foreground = #e8e8e8
 
 
+custom-shader = spinning_ghost
+
+
+
