@@ -176,7 +176,8 @@ label:focus {
     background-image: linear-gradient(45deg, #8d31a2 0%, #8d31a2 52%, #332c88 90%);
     color: black;
     border-radius: 20px 20px 20px 20px;
-    min-width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #pulseaudio.muted {
