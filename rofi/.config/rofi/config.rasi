@@ -4,8 +4,8 @@
     scrollbar: true;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #1c0d32;
-    gruvbox-dark-bg0:          #1c0d32;
+    gruvbox-dark-bg0-hard:     #1c0d3240;
+    gruvbox-dark-bg0:          #1c0d3240;
     gruvbox-dark-bg2:          #e063e0;
     gruvbox-dark-fg0:          #e8e8e8;
     gruvbox-dark-fg1:          #b9b9b9;
@@ -49,6 +49,7 @@ window {
     background-color: @background;
     border:           2;
     padding:          2;
+    border-radius: 10px;
 }
 
 mainbox {
@@ -78,6 +79,7 @@ listview {
 element {
     border:  0;
     padding: 2px;
+    border-radius: 5px;
 }
 
 element.normal.normal {
@@ -127,10 +129,11 @@ element.alternate.active {
 
 scrollbar {
     width:        4px;
-    border:       0;
+    border:       0px;
     handle-color: @scrollbar-handle;
     handle-width: 8px;
     padding:      0;
+    border-radius: 10px;
 }
 
 mode-switcher {
@@ -143,6 +146,7 @@ inputbar {
     text-color: @normal-foreground;
     padding:    2px;
     children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
+    border-radius: 10px;
 }
 
 case-indicator,
