@@ -4,11 +4,11 @@
     scrollbar: true;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #1c0d3240;
-    gruvbox-dark-bg0:          #1c0d3240;
-    gruvbox-dark-bg2:          #e063e0;
-    gruvbox-dark-fg0:          #e8e8e8;
-    gruvbox-dark-fg1:          #b9b9b9;
+    gruvbox-dark-bg0-hard:     #33263340;
+    gruvbox-dark-bg0:          #33263340;
+    gruvbox-dark-bg2:          #b06f72;
+    gruvbox-dark-fg0:          #c4aeaa;
+    gruvbox-dark-fg1:          #c4aeaa;
     gruvbox-dark-red-dark:     #890f4e;
     gruvbox-dark-red-light:    #f93c9f;
     gruvbox-dark-yellow-dark:  #7a7552;
