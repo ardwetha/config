@@ -18,4 +18,3 @@ export QT_QPA_PLATFORMTHEME=gtk3
 
 cat ~/.config/sheep
 
-alias ls=nvim

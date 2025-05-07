@@ -31,7 +31,7 @@
   },
   "languages": {
     "Markdown": {
-      "show_edit_predictions": false
+      "show_inline_completions": false
     }
   },
   "lsp": {
