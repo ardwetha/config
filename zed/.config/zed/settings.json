@@ -12,8 +12,8 @@
   },
   "assistant": {
     "default_model": {
-      "provider": "lmstudio",
-      "model": "gemma-3-4b-it"
+      "provider": "ollama",
+      "model": "gemma3:1b"
     },
     "version": "2"
   },
@@ -31,7 +31,14 @@
   },
   "languages": {
     "Markdown": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
+      "preferred_line_length": 32,
+      "soft_wrap": "editor_width",
+      "allow_rewrap": "in_selections"
+    },
+    "Typst": {
+      "allow_rewrap": "anywhere",
+      "soft_wrap": "editor_width"
     }
   },
   "lsp": {

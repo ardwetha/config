@@ -46,28 +46,34 @@ background-opacity = 0.7
 background-blur = 80
 
 
-palette = 0=#000000
-palette = 1=#b06f72
-palette = 2=#4d938a
-palette = 3=#dfbfb1
-palette = 4=#40429e
-palette = 5=#a326bf
-palette = 6=#49b3b7
-palette = 7=#cacaca
-palette = 8=#000000
-palette = 9=#b06f72
-palette = 10=#4d938a
-palette = 11=#dfbfb1
-palette = 12=#40429e
-palette = 13=#a326bf
-palette = 14=#49b3b7
-palette = 15=#cacaca
-background = #332633
-foreground = #c4aeaa
-cursor-color = #c40792
-cursor-text = #f68efb
-selection-background = #2f3333
-selection-foreground = #e8e8e8
+
+
+palette = 0=#0b0b0b
+palette = 1=#ff003c
+palette = 2=#39ff14
+palette = 3=#ffd700
+palette = 4=#9a00ff
+palette = 5=#ff00aa
+palette = 6=#00f0ff
+palette = 7=#e0e0e0
+
+palette = 8=#555555
+palette = 9=#ff6600
+palette = 10=#39ff14
+palette = 11=#ffd700
+palette = 12=#9a00ff
+palette = 13=#ff00aa
+palette = 14=#00f0ff
+palette = 15=#ffffff
+
+background = #0b0b0b
+foreground = #e0e0e0
+cursor-color = #00f0ff
+cursor-text = #0b0b0b
+selection-background = #2e2e2e
+selection-foreground = #e0e0e0
+
+
 
 
 custom-shader = spinning_ghost

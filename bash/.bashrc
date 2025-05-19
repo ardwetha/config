@@ -17,4 +17,3 @@ export EDITOR="zeditor"
 export QT_QPA_PLATFORMTHEME=gtk3
 
 cat ~/.config/sheep
-
