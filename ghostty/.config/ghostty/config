@@ -19,7 +19,8 @@
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
-# font-family = Iosevka
+font-family = SourceCodePro 
+font-size = 13
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -76,7 +77,6 @@ selection-foreground = #e0e0e0
 
 
 
-custom-shader = spinning_ghost
 
 
 
