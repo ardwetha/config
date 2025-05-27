@@ -13,7 +13,7 @@ eval $(thefuck --alias fuck)
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/zacuue/.lmstudio/bin"
 
-export EDITOR="zeditor"
+export EDITOR="nvim"
 export QT_QPA_PLATFORMTHEME=gtk3
 
 cat ~/.config/sheep
