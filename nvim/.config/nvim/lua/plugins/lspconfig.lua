@@ -61,7 +61,7 @@ return {
     lspconfig.rust_analyzer.setup({})
     lspconfig.tinymist.setup({})
     lspconfig.clangd.setup({})
-    
+    lspconfig.ltex_plus.setup({})
 --    lspconfig.texlab.setup({})
   end
 }
